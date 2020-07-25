@@ -1,0 +1,1 @@
+# Grandpa Inventory Strapi application
