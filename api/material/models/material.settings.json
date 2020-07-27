@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "materials",
   "info": {
-    "name": "category"
+    "name": "material"
   },
   "options": {
     "increments": true,
@@ -13,8 +13,8 @@
       "type": "string"
     },
     "products": {
-      "via": "categories",
       "collection": "product",
+      "via": "materials",
       "dominant": true
     }
   }

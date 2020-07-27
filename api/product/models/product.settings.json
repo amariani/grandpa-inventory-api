@@ -32,8 +32,17 @@
       "plugin": "upload",
       "required": false
     },
-    "category": {
-      "model": "category"
+    "brand": {
+      "via": "products",
+      "model": "brand"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "products"
+    },
+    "materials": {
+      "via": "products",
+      "collection": "material"
     }
   }
 }
