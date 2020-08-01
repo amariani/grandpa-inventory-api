@@ -4,9 +4,9 @@ module.exports = ({ env }) => ({
     providerOptions: {
       accessKeyId: env("AWS_ACCESS_KEY_ID"),
       secretAccessKey: env("AWS_ACCESS_SECRET"),
-      region: "aws-region",
+      region: "us-east-1",
       params: {
-        Bucket: "grandpa-inventory-bucket",
+        Bucket: env("AWS_S3_BUCKET_NAME"),
       },
     },
   },
